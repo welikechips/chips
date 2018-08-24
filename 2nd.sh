@@ -19,7 +19,7 @@ cp .tmux/.tmux.conf.local .
 tmux new -s tmux-setup
 echo "Press prefix + r to reload the tmux config"
 echo "Press prefix + I to install the plugins"
-read -P "Press enter when done with TMUX setup"
+read -p "Press enter when done with TMUX setup"
 
 # VPN Picker
 [ -d ~/tools ] || mkdir ~/tools
@@ -61,5 +61,5 @@ echo "*/10 * * * * /root/Desktop/backup.sh" > /var/spool/cron/crontabs/root
 echo "@reboot sleep 60 && /root/Desktop/share.sh" >> /var/spool/cron/crontabs/root
 
 apt autoremove -y
-firefox https://raw.githubusercontent.com/tnory56/kali-setup/master/ManualSetup.txt
+subl ~/kali-setup/ManualSetup.txt
 
