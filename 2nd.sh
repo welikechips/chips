@@ -61,4 +61,5 @@ echo "*/10 * * * * /root/Desktop/backup.sh" > /var/spool/cron/crontabs/root
 echo "@reboot sleep 60 && /root/Desktop/share.sh" >> /var/spool/cron/crontabs/root
 
 apt autoremove -y
-firefox https://raw.githubusercontent.com/tnory56/kali-setup/master/ManualSetup.md
+firefox https://raw.githubusercontent.com/tnory56/kali-setup/master/ManualSetup.txt
+
