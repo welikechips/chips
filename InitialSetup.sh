@@ -10,8 +10,6 @@ apt-get -y full-upgrade
 apt -y install open-vm-tools-desktop fuse
 
 #Start 2nd stage
-cd 
-git clone https://github.com/tnory56/kali-setup
-chmod +x /root/kali-setup/2nd.sh
-echo "@reboot sleep 60 && /root/kali-setup/2nd.sh" > /var/spool/cron/crontabs/root
+chmod +x ~/kali-setup/2nd.sh
+echo "@reboot sleep 60 && ~/kali-setup/2nd.sh" > /var/spool/cron/crontabs/root
 reboot
