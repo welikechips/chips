@@ -9,6 +9,7 @@ sudo apt-get -y install sublime-text
 #setup default apps
 apt-get -y install copyq
 apt-get -y install filezilla
+apt-get -y install gnome-screenshot
 
 #Setup Tmux
 cd 
