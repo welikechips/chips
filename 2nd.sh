@@ -29,7 +29,7 @@ cd ~/tools/vpn-picker
 chmod +x setup.sh && ./setup.sh
 
 #Make Base Directory
-basedir="~/scans/"
+basedir="/root/scans/"
 mkdir $basedir
 
 #Application to be tested
@@ -55,7 +55,7 @@ echo "mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other" > ~/Desktop/sh
 chmod +x ~/Desktop/share.sh
 
 echo "#!/bin/bash" > ~/Desktop/backup.sh
-echo "cp $(basedir) /mnt/hgfs/Google_Drive/Engagements/ -r " >> ~/Desktop/backup.sh
+echo "cp $basedir /mnt/hgfs/Google_Drive/Engagements/ -r " >> ~/Desktop/backup.sh
 chmod +x ~/Desktop/backup.sh
 
 echo "*/10 * * * * ~/Desktop/backup.sh" > /var/spool/cron/crontabs/root
