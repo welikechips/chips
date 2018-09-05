@@ -58,8 +58,8 @@ echo "#!/bin/bash" > ~/Desktop/backup.sh
 echo "cp $basedir /mnt/hgfs/Google_Drive/Engagements/ -r " >> ~/Desktop/backup.sh
 chmod +x ~/Desktop/backup.sh
 
-echo "*/10 * * * * ~/Desktop/backup.sh" > /var/spool/cron/crontabs/root
-echo "@reboot sleep 60 && ~/Desktop/share.sh" >> /var/spool/cron/crontabs/root
+echo "*/10 * * * * /root/Desktop/backup.sh" > /var/spool/cron/crontabs/root
+echo "@reboot sleep 60 && /root/Desktop/share.sh" >> /var/spool/cron/crontabs/root
 
 apt autoremove -y
 subl ~/kali-setup/ManualSetup.txt
