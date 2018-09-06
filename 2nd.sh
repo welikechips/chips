@@ -61,6 +61,14 @@ chmod +x ~/Desktop/backup.sh
 echo "*/10 * * * * /root/Desktop/backup.sh" > /var/spool/cron/crontabs/root
 echo "@reboot sleep 60 && /root/Desktop/share.sh" >> /var/spool/cron/crontabs/root
 
+#Install java and burp suite
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+java -jar ./tools/burp.jar
+
 apt autoremove -y
 subl ~/kali-setup/ManualSetup.txt
-
