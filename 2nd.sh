@@ -60,7 +60,7 @@ read -p "Press enter to continue script"
 mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
 
 echo "mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other" > ~/Desktop/share.sh
-echo "machanger -r eth0" >> ~/Desktop/share.sh
+echo "macchanger -r eth0" >> ~/Desktop/share.sh
 chmod +x ~/Desktop/share.sh
 
 echo "#!/bin/bash" > ~/Desktop/backup.sh
