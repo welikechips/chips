@@ -6,6 +6,14 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get -y install sublime-text
 
+#Install java and burp suite
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+java -jar ./tools/burp.jar
+
 #setup default apps
 apt-get -y install copyq
 apt-get -y install filezilla
@@ -52,6 +60,7 @@ read -p "Press enter to continue script"
 mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
 
 echo "mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other" > ~/Desktop/share.sh
+echo "machanger -r eth0" >> ~/Desktop/share.sh
 chmod +x ~/Desktop/share.sh
 
 echo "#!/bin/bash" > ~/Desktop/backup.sh
@@ -60,15 +69,6 @@ chmod +x ~/Desktop/backup.sh
 
 echo "*/10 * * * * /root/Desktop/backup.sh" > /var/spool/cron/crontabs/root
 echo "@reboot sleep 60 && /root/Desktop/share.sh" >> /var/spool/cron/crontabs/root
-
-#Install java and burp suite
-echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list
-echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" >> /etc/apt/sources.list
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
-
-java -jar ./tools/burp.jar
 
 apt autoremove -y
 subl ~/kali-setup/ManualSetup.txt
