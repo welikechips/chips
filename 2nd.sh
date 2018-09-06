@@ -70,5 +70,7 @@ chmod +x ~/Desktop/backup.sh
 echo "*/10 * * * * /root/Desktop/backup.sh" > /var/spool/cron/crontabs/root
 echo "@reboot sleep 60 && /root/Desktop/share.sh" >> /var/spool/cron/crontabs/root
 
+dconf write /org/gnome/shell/favorite-apps "['firefox-esr.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'Burp Suite Professional-0.desktop', 'sublime_text.desktop', 'org.gnome.Screenshot.desktop', 'kali-sparta.desktop', 'com.github.hluk.copyq.desktop']"
+
 apt autoremove -y
 subl ~/kali-setup/ManualSetup.txt
