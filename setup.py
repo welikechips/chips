@@ -35,7 +35,7 @@ def main_menu():
     print("5. Vpnpicker")
     print("6. Setup Folders for Tests")
     print("7. OpenVas")
-    print("8. Pychamr")
+    print("8. Pycharm")
     print("\n0. Quit")
     choice = raw_input(" >>  ")
     exec_menu(choice)
