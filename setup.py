@@ -112,7 +112,7 @@ def openvas():
     back()
 
 
-# Install Pycharm
+# Install Pycharm Community
 def pycharm():
     subprocess.call("scripts/pycharm.sh", shell=True)
     back()
