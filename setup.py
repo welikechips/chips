@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# title           :shellcode.py
-# description     :Help generate shellcode for a ctf
-# author          :
+# title           :setup.py
+# description     :Help install programs on Kali Setup
+# author          :weirdatfirst
 # date            :
-# version         :0.1
-# usage           :python shellcode lhost lport
+# usage           :
 # =======================================================================
 
 # Import the modules needed to run the script.
@@ -33,8 +32,10 @@ def main_menu():
     print("2. Default Applications")
     print("3. Java 8")
     print("4. Tmux Color and Plugins")
-    print("5. vpnpicker")
+    print("5. Vpnpicker")
     print("6. Setup Folders for Tests")
+    print("7. OpenVas")
+    print("8. Pychamr")
     print("\n0. Quit")
     choice = raw_input(" >>  ")
     exec_menu(choice)
@@ -104,6 +105,19 @@ def testsetup():
     back()
 
 
+# Install OpenVas Vulnerablity scanner
+def openvas():
+    subprocess.call("scripts/openvas.sh", shell=True)
+    print("Make sure you copy out the admin password!")
+    back()
+
+
+# Install Pycharm
+def pycharm():
+    subprocess.call("scripts/pycharm.sh")
+    back()
+
+
 # =======================
 #    MENUS DEFINITIONS
 # =======================
@@ -117,6 +131,8 @@ menu_actions = {
     '4': tmuxinstall,
     '5': vpnpicker,
     '6': testsetup,
+    '7': openvas,
+    '8': pycharm,
     '9': back,
     '0': exit,
 }
