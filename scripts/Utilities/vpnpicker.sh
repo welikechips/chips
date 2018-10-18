@@ -11,4 +11,4 @@ read password
 echo "What is you password for Private Internet Access"
 
 echo $username > ~/tools/vpn-picker/credentials.txt
-echo $password > ~/tools/vpn-picker/credentials.txt
+echo $password >> ~/tools/vpn-picker/credentials.txt
