@@ -1,8 +1,8 @@
 #!/bin/bash
-read server_name
 echo "What is the name of the box?"
-read IP
+read server_name
 echo "What is the IP address?"
+read IP
 tmux setenv IP ${IP}
 tmux setenv WD $(pwd)
 export IP=${IP}

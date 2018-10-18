@@ -38,7 +38,8 @@ help_text = {
     "burp_suite": "Burp Suite Professional",
     "cobaltstrike": "Cobalt Strike",
     "shellcode": "Shellcode Maker",
-    "tmux-autoenv": "Set variables for tmux and hostname for a server"
+    "tmux-autoenv": "Set variables for tmux and hostname for a server",
+    "burp_and_test_setup": "Burp Suite and Setup Folders for Tests"
 }
 
 choices = {}
