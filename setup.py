@@ -42,8 +42,6 @@ choices = {}
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-the_password = ""
-
 
 def get_files(directory):
     return [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
@@ -77,10 +75,6 @@ def execute_choice():
 
 def main_menu():
     os.system('cls' if os.name == 'nt' else 'clear')
-    try:
-        the_password = sys.argv[1]
-    except IndexError:
-        print("")
     print("Install commonly used programs ")
     path = os.path.join(dir_path, "scripts")
     list_items = next(os.walk(path))[1]
@@ -121,7 +115,7 @@ def exec_menu(choice):
                 if os.path.isdir(the_choice):
                     create_submenu(the_choice)
                 else:
-                    subprocess.call(the_choice + " " + the_password, shell=True)
+                    subprocess.call(the_choice, shell=True)
                 back()
             except KeyError:
                 print("Invalid selection, please try again.\n")
