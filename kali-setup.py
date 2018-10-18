@@ -35,7 +35,9 @@ help_text = {
     "screen": "Adjust Screen for Kali",
     "InitialSetup": "Run Initial Setup for Kali instance",
     "cleanup_favorites": "Cleanup the favorites bar",
-    "burp_suite": "Burp Suite Professional"
+    "burp_suite": "Burp Suite Professional",
+    "cobaltstrike": "Cobalt Strike",
+    "shellcode": "Shellcode Maker"
 }
 
 choices = {}
