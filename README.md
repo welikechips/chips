@@ -6,5 +6,5 @@
 cd
 git clone https://github.com/welikechips/kali-setup
 path=$(pwd)
-ln -s ${path}/kali-setup.py /usr/bin/kalisetup 
+ln -s ${path}/kali-setup/kali-setup.py /usr/bin/kalisetup 
 ```
