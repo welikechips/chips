@@ -12,7 +12,6 @@ import sys
 import os
 import subprocess
 
-pressany = ("Press any key to return to main menu")
 # Main definition - constants
 
 # =======================
@@ -43,6 +42,8 @@ help_text = {
 }
 
 choices = {}
+
+breadcrumbs = []
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -79,6 +80,7 @@ def execute_choice():
 
 def main_menu():
     os.system('cls' if os.name == 'nt' else 'clear')
+    breadcrumbs.clear()
     print("Install commonly used programs ")
     path = os.path.join(dir_path, "scripts")
     list_items = next(os.walk(path))[1]
@@ -95,8 +97,9 @@ def create_submenu(choice):
 
 # Back to main menu
 def back():
-    input(pressany)
-    menu_actions['main_menu']()
+    input("Press any key to return")
+    breadcrumbs.pop()
+    exec_menu(breadcrumbs[-1])
 
 
 # Exit program
@@ -108,6 +111,8 @@ def exit():
 def exec_menu(choice):
     os.system('cls' if os.name == 'nt' else 'clear')
     ch = str(choice).lower()
+    if ch not in breadcrumbs:
+        breadcrumbs.append(ch)
     if ch == '':
         menu_actions['main_menu']()
     else:
@@ -136,7 +141,7 @@ def exec_menu(choice):
 # Menu definition
 menu_actions = {
     'main_menu': main_menu,
-    '9': back,
+    '9': main_menu,
     '0': exit,
 }
 
