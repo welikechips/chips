@@ -4,7 +4,7 @@
 
 ```
 cd
-git clone https://github.com/tnory56/kali-setup
-cd ~/kali-setup
-chmod +x InitialSetup.sh && ./InitialSetup.sh
+git clone https://github.com/welikechips/kali-setup
+path=$(pwd)
+ln -s ${path}/kali-setup.py /usr/bin/kalisetup 
 ```

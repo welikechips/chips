@@ -2,7 +2,7 @@
 
 #Setup Tmux
 cd 
-sudo git clone https://github.com/tnory56/.tmux.git
+sudo git clone https://github.com/welikechips/.tmux.git
 sudo git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo ln -s -f .tmux/.tmux.conf
 sudo cp .tmux/.tmux.conf.local .

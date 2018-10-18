@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# title           :setup.py
+# title           :kali-setup.py
 # description     :Help install programs on Kali Setup
 # author          :weirdatfirst
 # date            :
