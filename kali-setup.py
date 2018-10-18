@@ -37,7 +37,8 @@ help_text = {
     "cleanup_favorites": "Cleanup the favorites bar",
     "burp_suite": "Burp Suite Professional",
     "cobaltstrike": "Cobalt Strike",
-    "shellcode": "Shellcode Maker"
+    "shellcode": "Shellcode Maker",
+    "tmux-autoenv": "Set variables for tmux and hostname for a server"
 }
 
 choices = {}
