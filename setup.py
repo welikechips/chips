@@ -109,7 +109,7 @@ def exit():
 # Execute menu
 def exec_menu(choice):
     os.system('cls' if os.name == 'nt' else 'clear')
-    ch = choice.lower()
+    ch = str(choice).lower()
     if ch == '':
         menu_actions['main_menu']()
     else:
