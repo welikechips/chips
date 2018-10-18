@@ -115,11 +115,13 @@ def exec_menu(choice):
             menu_actions[ch]()
         except KeyError:
             try:
-                the_choice = choices[ch]
-                if os.path.isdir(the_choice):
-                    create_submenu(the_choice)
-                else:
-                    subprocess.call(the_choice, shell=True)
+                chars = ch.split(",")
+                for x in chars:
+                    the_choice = choices[x]
+                    if os.path.isdir(the_choice):
+                        create_submenu(the_choice)
+                    else:
+                        subprocess.call(the_choice, shell=True)
                 back()
             except KeyError:
                 print("Invalid selection, please try again.\n")
