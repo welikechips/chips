@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # title           :kali-setup.py
 # description     :Help install programs on Kali Setup
-# author          :weirdatfirst
+# author          :weirdatfirst and tiltedtimmy
 # date            :
 # usage           :
 # =======================================================================
@@ -20,27 +20,6 @@ import subprocess
 
 # Main menu
 
-help_text = {
-    # Pentesting
-    "openvas": "Openvas",
-    # Utilities
-    "defaultapps": "Default Applications",
-    "java8": "Java 8",
-    "pycharm": "Pycharm",
-    "sublime": "Sublime",
-    "testsetup": "Setup Folders for Tests",
-    "tmux": "Tmux Color and Plugins",
-    "vpnpicker": "Vpnpicker",
-    "screen": "Adjust Screen for Kali",
-    "InitialSetup": "Run Initial Setup for Kali instance",
-    "cleanup_favorites": "Cleanup the favorites bar",
-    "burp_suite": "Burp Suite Professional",
-    "cobaltstrike": "Cobalt Strike",
-    "shellcode": "Shellcode Maker",
-    "tmux-autoenv": "Set variables for tmux and hostname for a server",
-    "burp_and_test_setup": "Burp Suite and Setup Folders for Tests"
-}
-
 choices = {}
 
 breadcrumbs = []
@@ -57,15 +36,20 @@ def list_menu(menu, path, starting_id=0):
     for list_item in menu:
         base_name = os.path.basename(list_item)
         file_name = os.path.splitext(base_name)[0]
-        try:
-            list_item_value = help_text[file_name]
-        except KeyError:
+        file_path = os.path.join(path, list_item)
+        list_item_value = False
+        if os.path.isfile(file_path):
+            with open(file_path, 'r') as f:
+                for line in f:
+                    if "# Description:" in line:
+                        list_item_value = line.replace("# Description:", "").lstrip(" ").rstrip("\n")
+        if list_item_value is False:
             list_item_value = file_name
         if starting_id is 0:
-            choices.update({str(i): os.path.join(path, list_item)})
+            choices.update({str(i): file_path})
             print("{}. {}".format(i, list_item_value))
         else:
-            choices.update({str(starting_id) + str(i): os.path.join(path, list_item)})
+            choices.update({str(starting_id) + str(i): file_path})
             print("{}{}. {}".format(starting_id, i, list_item_value))
         i = i + 1
     print("\n0. Quit")

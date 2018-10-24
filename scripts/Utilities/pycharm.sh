@@ -1,4 +1,5 @@
 #!/bin/bash
+# Description: Install Pycharm
 pycharm=/pycharm-community-2018.2.4/bin/pycharm.sh
 cd /opt/
 wget www.weirdatfirst.com/files/tools/pycharm-community-2018.2.4.tar.gz
