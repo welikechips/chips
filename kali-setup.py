@@ -4,7 +4,7 @@
 # description     :Help install programs on Kali Setup
 # author          :weirdatfirst and tiltedtimmy
 # date            :
-# usage           :
+# usage           :testing
 # =======================================================================
 
 # Import the modules needed to run the script.
