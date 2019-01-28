@@ -4,4 +4,4 @@ sudo echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> 
 sudo echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
+sudo apt-get -y install oracle-java8-installer
