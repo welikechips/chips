@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 mkdir -p /root/tools/
 cd /root/tools
 git clone https://github.com/aboul3la/Sublist3r
