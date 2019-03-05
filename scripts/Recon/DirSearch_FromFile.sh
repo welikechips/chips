@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # Description: DirSearch - Run Multiple URLS
 path=$(pwd)
 read -r -p 'Please enter full path of file ' file

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # Description: Sublist3r - Run
 echo "Right now the output file will be in /root/scans/"
 echo "What domain do you want to scan?"
