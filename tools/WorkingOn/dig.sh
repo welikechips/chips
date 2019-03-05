@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Dig - Runs Dig
+# Description: Dig
 path="/root/scans/"
 declare -a opt_name=()
 declare -A opt_file=()

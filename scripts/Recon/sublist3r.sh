@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Sublist3r - Run
+# Description: Sublist3r - Scans domain for subdomains
 
 if [ ! -d "/root/tools/Sublist3r" ]; then
     echo "Make sure you run Sublist3r Install"
