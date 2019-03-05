@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Description: Run Multiple URLS in DirSearch
+# Description: Dirsearch- Run Multiple URLS
 path=$(pwd)
 read -r -p 'Please enter full path of file ' file
 mkdir $path/dirsearch
