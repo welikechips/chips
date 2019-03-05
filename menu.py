@@ -28,7 +28,8 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
 def get_files(directory):
-    return [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+    s_directory = sorted(os.listdir(directory))
+    return [f for f in s_directory if os.path.isfile(os.path.join(directory, f))]
 
 
 def list_menu(menu, path, starting_id=0):
