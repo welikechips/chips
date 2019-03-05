@@ -1,8 +1,8 @@
 #!/bin/bash
 # Description: Sublist3r - Run
 
-if [ ! -d "/root/tools/dirsearch" ]; then
-    echo "Make sure you run dirsearch Install"
+if [ ! -d "/root/tools/Sublist3r" ]; then
+    echo "Make sure you run Sublist3r Install"
 else
     echo "Right now the output file will be in /root/scans/"
     echo "What domain do you want to scan?"
