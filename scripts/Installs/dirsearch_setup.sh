@@ -1,6 +1,6 @@
 #!/bin/bash
 # Description: DirSearch
-mkdir /root/tools
+mkdir -p /root/tools
 cd /root/tools/
 git clone https://github.com/maurosoria/dirsearch.git
 cd /usr/bin/

@@ -6,7 +6,7 @@ if [ ! -d "/root/tools/dirsearch" ]; then
 else
     path=$(pwd)
     read -r -p 'Please enter full path of file ' file
-    mkdir $path/dirsearch
+    mkdir -p $path/dirsearch
     name=$(cat "$file")
     for i in $name; do
             echo https://$i
