@@ -1,3 +1,0 @@
-Foxy Proxy
-CobaltStrike
-Replace creds in /root/tools/vpn-picker/credentials.txt
