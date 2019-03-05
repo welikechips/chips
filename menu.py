@@ -53,8 +53,8 @@ def list_menu(menu, path, starting_id=0):
             choices.update({str(starting_id) + str(i): file_path})
             print("{}{}. {}".format(starting_id, i, list_item_value))
         i = i + 1
-    print("\n0. Quit")
-    print("9. Back to Main Menu")
+    print("\n9. Back to Main Menu")
+    print("0. Quit")
 
 
 def execute_choice():
