@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Description: Sublist3r - Run
 echo "Right now the output file will be in /root/scans/"
 echo "What domain do you want to scan?"
 read domain

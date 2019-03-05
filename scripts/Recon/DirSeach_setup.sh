@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Description: Install DirSearch
+# Description: DirSearch - Install
 mkdir /root/tools
 cd /root/tools/
 git clone https://github.com/maurosoria/dirsearch.git
