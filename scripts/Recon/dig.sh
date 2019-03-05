@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # Description: Dig - Runs Dig
 path="/root/scans/"
 declare -a opt_name=()

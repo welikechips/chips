@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Sublist3r - Install
+# Description: Sublist3r
 mkdir -p /root/tools/
 cd /root/tools
 git clone https://github.com/aboul3la/Sublist3r

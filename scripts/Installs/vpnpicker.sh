@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Install Vpnpicker and set username and password
+# Description: VPNpicker
 [ -d ~/tools ] || mkdir ~/tools
 cd ~/tools && git clone https://github.com/welikechips/vpn-picker/
 cd ~/tools/vpn-picker

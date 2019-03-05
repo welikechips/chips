@@ -1,5 +1,5 @@
-#/bin/bash
-# Description: Setup Tmux Color and Plugins
+#!/bin/bash
+# Description: Tmux
 cd 
 sudo git clone https://github.com/welikechips/.tmux.git
 sudo git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

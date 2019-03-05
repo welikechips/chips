@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Run Initial Setup for Kali instance
+# Description: Kali Updates
 # Initial update
 echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 

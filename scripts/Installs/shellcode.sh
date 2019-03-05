@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Shellcode Maker
+# Description: Shellcode
 cd 
 mkdir -p tools
 cd tools	
