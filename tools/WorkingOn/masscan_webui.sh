@@ -1,9 +1,4 @@
 #!/bin/bash
-#Read root password
-read -r -p "What is your root password" rootpassword
-#Read password for masscan setup
-read -r -p "What password do you want to use for masscan" masspassword
-
 #Install requirements
 apt-get update
 apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
@@ -24,6 +19,11 @@ ln -s $path$masscan masscan
 #Install Masscan Web UI
 git clone https://github.com/offensive-security/masscan-web-ui
 mv masscan-web-ui/* /var/www/html/
+
+#Read root password
+read -r -p "What is your root password" rootpassword
+#Read password for masscan setup
+read -r -p "What password do you want to use for masscan" masspassword
 
 #Add masscan user to mysql
 mysql -u root -p$rootpassword <<EOF
