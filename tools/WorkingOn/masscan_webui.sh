@@ -21,7 +21,7 @@ git clone https://github.com/offensive-security/masscan-web-ui
 mv masscan-web-ui/* /var/www/html/
 
 #Read root password
-read -r -p "What is your root password?" rootpassword
+read -r -p "What is your root password (for logging into MySql)?" rootpassword
 #Read password for masscan setup
 read -r -p "What password do you want to use for masscan?" masspassword
 
