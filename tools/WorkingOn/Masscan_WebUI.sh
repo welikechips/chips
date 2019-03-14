@@ -14,22 +14,26 @@ cd /usr/bin
 ln -s /root/tools/masscan/bin/masscan masscan
 cd /var/www/html
 
-echo "\nAdd this to mysql
+echo "
+Add this to mysql
 create database masscan;
 CREATE USER 'masscan'@'localhost' IDENTIFIED BY 'changeme3';
 GRANT ALL PRIVILEGES ON masscan.* TO 'masscan'@'localhost';
-exit"
+exit
 
-mysql -u root -p
+Run this in /var/www/html
+
 mysql -u root -p masscan < db-structure-mysql.sql
-echo "\nEdit config.php
+rm db-stru* REA*
+
+Then edit config.php
 
 #define('DB_DRIVER',	    'mysql');
 #define('DB_HOST',       'localhost');
 #define('DB_USERNAME',   'masscan');
 #define('DB_PASSWORD',   'changeme3');
-#define('DB_DATABASE',   'masscan'); "
+#define('DB_DATABASE',   'masscan');
 
-echo "\nmasscan 10.0.0.0/8 -p80,21,53 --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml"
+USAGE: masscan 10.0.0.0/8 -p80,21,53 --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml
 
-echo "\nphp import.php scan-01.xml"
+Add To Database: php import.php scan-01.xml"
