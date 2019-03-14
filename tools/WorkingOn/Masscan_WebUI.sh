@@ -1,15 +1,15 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
-sudo systemctl start mysql
-sudo systemctl start apache2
+apt-get update
+apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
+systemctl start mysql
+systemctl start apache2
 path=$(pwd)
 git clone https://github.com/robertdavidgraham/masscan
 cd /masscan/
-sudo make -j
+make -j
 git clone https://github.com/offensive-security/masscan-web-ui
-sudo mv masscan-web-ui/* /var/www/html/
-cd /usr/bin
+mv masscan-web-ui/* /var/www/html/
+cd /usr/bin/
 ln -s $path/masscan/bin/masscan masscan
 
 echo "
