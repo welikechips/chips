@@ -16,7 +16,7 @@ cd /var/www/html
 
 echo -e " \n add this to mysql
 create database masscan;
-CREATE USER 'masscan'@'localhost' IDENTIFIED BY 'weirdatfirst';
+CREATE USER 'masscan'@'localhost' IDENTIFIED BY 'changeme3';
 GRANT ALL PRIVILEGES ON masscan.* TO 'masscan'@'localhost';
 exit "
 
