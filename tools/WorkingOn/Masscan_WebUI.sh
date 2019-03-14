@@ -1,5 +1,4 @@
 #!/bin/bash
-#curl https://raw.githubusercontent.com/welikechips/chips/master/tools/WorkingOn/Masscan_WebUI.sh |sh
 apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
 systemctl start mysql
 systemctl start apache2
