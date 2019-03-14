@@ -16,6 +16,7 @@ ln -s /root/tools/masscan/bin/masscan masscan
 cd /var/www/html
 
 echo "
+****************************************************************
 Add this to mysql
 create database masscan;
 CREATE USER 'masscan'@'localhost' IDENTIFIED BY 'changeme3';
@@ -25,7 +26,6 @@ exit
 Run this in /var/www/html
 
 mysql -u root -p masscan < db-structure-mysql.sql
-rm db-stru* REA*
 
 Then edit config.php
 
@@ -37,4 +37,5 @@ Then edit config.php
 
 USAGE: masscan 10.0.0.0/8 -p80,21,53 --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml
 
-Add To Database: php import.php scan-01.xml"
+Add To Database: php import.php scan-01.xml
+**************************************************************"
