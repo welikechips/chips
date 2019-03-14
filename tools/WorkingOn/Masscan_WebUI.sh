@@ -1,17 +1,17 @@
 #!/bin/bash
-sudo apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
-sudo systemctl start mysql
-sudo systemctl start apache2
-sudo mkdir -p /root/tools/
+apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
+systemctl start mysql
+systemctl start apache2
+mkdir -p /root/tools/
 cd /root/tools/
 git clone https://github.com/robertdavidgraham/masscan
 cd /root/tools/masscan/
-sudo make -j
+make -j
 cd /root/tools
-sudo git clone https://github.com/offensive-security/masscan-web-ui
-sudo mv masscan-web-ui/* /var/www/html/
+git clone https://github.com/offensive-security/masscan-web-ui
+mv masscan-web-ui/* /var/www/html/
 cd /usr/bin
-sudo ln -s /root/tools/masscan/bin/masscan masscan
+ln -s /root/tools/masscan/bin/masscan masscan
 cd /var/www/html
 
 echo -e " \n add this to mysql
