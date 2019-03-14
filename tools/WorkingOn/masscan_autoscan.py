@@ -18,9 +18,13 @@ CIDR = sys.argv[1]
 ports = sys.argv[2]
 args = (CIDR,ports)
 
-
-def masscan(CIDR,port):
-    command = "masscan %s -p %s --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml" % args
-    #os.system(command)
-    print command
-
+def masscan():
+	screendetach = "screen -S \"scr1\" -d -m"
+	screensend = "screen -r \"scr1\" -X mass $\"ls \n\""
+	command = "masscan %s -p %s --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml" % args
+	os.system(screendetach)
+	os.system(screensend)
+	os.system(command)
+	print command
+    
+masscan()
