@@ -1,11 +1,8 @@
 #!/bin/bash
 #Read root password
-echo "What is your root password"
-read rootpassword
-
+read -r -p "What is your root password" rootpassword
 #Read password for masscan setup
-echo "What password do you want to use for masscan"
-read masspassword
+read -r -p "What password do you want to use for masscan" masspassword
 
 #Install requirements
 apt-get update
