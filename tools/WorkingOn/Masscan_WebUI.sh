@@ -21,19 +21,15 @@ GRANT ALL PRIVILEGES ON masscan.* TO 'masscan'@'localhost';
 exit"
 
 mysql -u root -p
-cd /var/www/html
 mysql -u root -p masscan < db-structure-mysql.sql
-rm db-structure* README.md
-
 echo "\nEdit config.php
 
 #define('DB_DRIVER',	    'mysql');
 #define('DB_HOST',       'localhost');
 #define('DB_USERNAME',   'masscan');
-#define('DB_PASSWORD',   'changem3');
+#define('DB_PASSWORD',   'changeme3');
 #define('DB_DATABASE',   'masscan'); "
 
 echo "\nmasscan 10.0.0.0/8 -p80,21,53 --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml"
 
 echo "\nphp import.php scan-01.xml"
-#
