@@ -6,7 +6,7 @@ sudo systemctl start apache2
 path=$(pwd)
 git clone https://github.com/robertdavidgraham/masscan
 cd /masscan/
-make -j
+sudo make -j
 git clone https://github.com/offensive-security/masscan-web-ui
 sudo mv masscan-web-ui/* /var/www/html/
 cd /usr/bin
