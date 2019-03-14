@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get update
 apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
 systemctl start mysql
 systemctl start apache2
