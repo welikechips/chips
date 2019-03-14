@@ -13,18 +13,16 @@ mv masscan-web-ui/* /var/www/html/
 cd /usr/bin/
 ln -s $path$masscan masscan
 
-echo "
-****************************************************************
-Add this to mysql
+mysql -u root -ptoor <<EOF
 create database masscan;
 CREATE USER 'masscan'@'localhost' IDENTIFIED BY 'changeme3';
 GRANT ALL PRIVILEGES ON masscan.* TO 'masscan'@'localhost';
 exit
+EOF
+cd /var/www/html
+mysql -u root -ptoor masscan < db-structure-mysql.sql
 
-Run this in /var/www/html
-
-mysql -u root -p masscan < db-structure-mysql.sql
-
+echo "
 Then edit config.php
 
 #define('DB_DRIVER',	    'mysql');
