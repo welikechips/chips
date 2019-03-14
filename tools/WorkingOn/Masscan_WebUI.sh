@@ -3,11 +3,11 @@ sudo apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
 sudo systemctl start mysql
 sudo systemctl start apache2
 sudo mkdir -p /root/tools/
-sudo cd /root/tools/
+cd /root/tools/
 git clone https://github.com/robertdavidgraham/masscan
-sudo cd /root/tools/masscan/
+cd /root/tools/masscan/
 sudo make -j
-sudo cd /root/
+cd /root/tools
 sudo git clone https://github.com/offensive-security/masscan-web-ui
 sudo mv masscan-web-ui/* /var/www/html/
 cd /usr/bin
@@ -36,4 +36,3 @@ echo -e "\nEdit config.php
 echo "masscan 10.0.0.0/8 -p80,21,53 --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml"
 
 echo "php import.php scan-01.xml"
-#
