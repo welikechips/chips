@@ -4,13 +4,14 @@ apt-get install -y apache2 php php-mysql mysql-server php-xml gcc make
 systemctl start mysql
 systemctl start apache2
 path=$(pwd)
+masscan=/masscan/bin/masscan
 git clone https://github.com/robertdavidgraham/masscan
 cd /masscan/
 make -j
 git clone https://github.com/offensive-security/masscan-web-ui
 mv masscan-web-ui/* /var/www/html/
 cd /usr/bin/
-ln -s $path/masscan/bin/masscan masscan
+ln -s $path$masscan masscan
 
 echo "
 ****************************************************************
