@@ -36,3 +36,4 @@ echo -e "\nEdit config.php
 echo "masscan 10.0.0.0/8 -p80,21,53 --banners --source-ip 10.0.0.2 --max-rate 100000 -oX scan-01.xml"
 
 echo "php import.php scan-01.xml"
+#
