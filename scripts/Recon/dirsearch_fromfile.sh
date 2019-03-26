@@ -10,6 +10,6 @@ else
     name=$(cat "$file")
     for i in $name; do
             echo https://$i
-            dirsearch -u https://$i -w /usr/share/wordlists/dirb/big.txt -f -t 100 -r -e php,html,js,txt,asp,aspx -x 403 --simple-report=dirsearch/$i
+            dirsearch -u http://$i -w /usr/share/wordlists/dirb/big.txt -f -t 100 -r -e php,html,js,txt,asp,aspx -x 403 --simple-report=dirsearch/$i
     done
 fi
