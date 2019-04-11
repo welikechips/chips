@@ -36,7 +36,6 @@ breadcrumbs = []
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-print(welcome)
 def get_files(directory):
     s_directory = sorted(os.listdir(directory))
     return [f for f in s_directory if os.path.isfile(os.path.join(directory, f))]
@@ -76,6 +75,7 @@ def execute_choice():
 def main_menu():
     os.system('cls' if os.name == 'nt' else 'clear')
     breadcrumbs.clear()
+    print(welcome)
     print("Install commonly used programs ")
     path = os.path.join(dir_path, "scripts")
     list_items = next(os.walk(path))[1]
