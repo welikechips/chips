@@ -20,13 +20,23 @@ import subprocess
 
 # Main menu
 
+welcome = """
+
+_________   ___ ___ ._____________  _________
+\_   ___ \ /   |   \|   \______   \/   _____/
+/    \  \//    ~    \   ||     ___/\_____  \ 
+\     \___\    Y    /   ||    |    /        /
+ \______  /\___|_  /|___||____|   /_______  /
+        \/       \/                       \/ 
+
+"""
 choices = {}
 
 breadcrumbs = []
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-
+print(welcome)
 def get_files(directory):
     s_directory = sorted(os.listdir(directory))
     return [f for f in s_directory if os.path.isfile(os.path.join(directory, f))]
