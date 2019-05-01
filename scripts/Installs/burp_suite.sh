@@ -4,7 +4,7 @@ echo "What is you password for Burp suite zip"
 read password
 cd /opt/
 pip install gdown
-gdown https://drive.google.com/uc?id=1k9KQNQmhZpobruPbjK5jFSfzrG95-bWt
+gdown https://drive.google.com/open?id=15S7bFHZMzj9FRk6mvtV502N1F6ntPaNa
 #wget www.weirdatfirst.com/files/burp.zip
 path=$(pwd)
 unzip -P "${password}" ${path}/burp.zip
