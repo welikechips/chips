@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Burp Suite Professional1
+# Description: Burp Suite Professional
 echo "What is you password for Burp suite zip"
 read password
 cd /opt/
