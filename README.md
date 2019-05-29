@@ -4,4 +4,4 @@ Usage ./menu.py
 
 We recommend making a symbolic link
 
-ln -s /root/chips/menu.py chips
+ln -s /root/chips/menu.py /usr/local/bin/chips
