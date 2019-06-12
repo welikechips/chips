@@ -1,14 +1,14 @@
 #!/bin/bash
 # Description: Pycharm
-pycharm=/pycharm-community-2018.2.4/bin/pycharm.sh
+pycharm=/pycharm-community-2019.1.3/bin/pycharm.sh
 cd /opt/
 pip install gdown
 gdown https://drive.google.com/open?id=1P8t9QTLw8681IUTqwC-QHtVzUJ0Jg-VT
 path=$(pwd)
-tar -xf pycharm-community-2018.2.4.tar.gz
+tar -xf pycharm-community-2019.1.3.tar.gz
 cd /usr/bin/
 ln -s $path$pycharm pycharm
-rm /opt/pycharm-community-2018.2.4.tar.gz
+rm /opt/pycharm-community-2019.1.3.tar.gz
 
 
 
