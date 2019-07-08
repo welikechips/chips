@@ -9,6 +9,4 @@ apt-get -y full-upgrade
 #Install VMWare tools
 apt -y install open-vm-tools-desktop fuse
 
-#Start 2nd stage
-chmod +x ~/kali-setup/2nd.sh
 reboot
