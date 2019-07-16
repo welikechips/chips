@@ -1,6 +1,6 @@
 #!/bin/bash
 # Description: All Except Openvas/Initial Setup
-path=/root/chips/scripts/Installs/
+path=~/chips/scripts/Installs/
 files=$path/*
 all=$path/all.sh
 for f in $files
