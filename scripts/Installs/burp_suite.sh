@@ -5,7 +5,7 @@ read password
 cd /opt/
 sudo apt-get -y install python-pip
 pip install gdown
-gdown https://drive.google.com/uc?id=1leH1chDMeFP7TTg2G7dHd_Xx0axY7WqJ
+gdown https://drive.google.com/uc?id=16FYdRnML4oEFTX6ZCt32bo_5aSfAaLxN
 #wget www.weirdatfirst.com/files/burp.zip
 path=$(pwd)
 unzip -P "${password}" ${path}/burp.zip
