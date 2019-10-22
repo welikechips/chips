@@ -8,8 +8,8 @@ wget http://deb.parrotsec.org/parrot/pool/main/p/parrot-themes/parrot-themes_3.0
 
 apt-get install ./parrot-themes_3.0+parrot2_all.deb 
 
-read -p "Make sure you have the mounted Google Drive (Press enter to continue)"
-
 mkdir ~/scripts
-cp /mnt/hgfs/Google_Drive/mate-settings/scripts/* ~/scripts/
-cp /mnt/hgfs/Google_Drive/mate-settings/layouts/* /usr/share/mate-panel/layouts/
+git clone https://github.com/welikechips/mate-settings
+cd mate-settings
+cp -r scripts/* ~/scripts
+cp -r layouts/* /usr/share/mate-panel/layouts/
