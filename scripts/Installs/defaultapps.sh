@@ -7,3 +7,4 @@ cd /usr/share/wordlists/
 git clone https://github.com/danielmiessler/SecLists.git
 git clone https://github.com/fuzzdb-project/fuzzdb.git
 echo 'export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --password-store=detect --no-sandbox --user-data-dir"' >> /etc/chromium.d/default-flags
+#
