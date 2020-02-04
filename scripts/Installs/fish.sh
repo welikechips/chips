@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+# Description: Fish Interactive Shell
 apt-get update
 apt-get install fish
 sudo echo "set -g default-command /usr/bin/fish" >> ~/.tmux.conf
