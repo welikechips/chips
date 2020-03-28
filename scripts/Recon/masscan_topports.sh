@@ -8,7 +8,7 @@ if test -f $filename; then
     echo "Found targets.txt"
 else
     echo " No file named targets.txt in current directory"
-    read -r -p 'Please enter full path of file with targets. ' filename
+    read -r -p 'Please enter full path of file with targets.txt ' filename
 fi
 
 

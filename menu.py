@@ -19,6 +19,21 @@ import subprocess
 # =======================
 
 # Main menu
+import argparse
+
+parser = argparse.ArgumentParser(description='A tutorial of argparse!')
+group = parser.add_mutually_exclusive_group(required=False)
+
+group.add_argument('--a', action='store_true', help="This is the 'a' variable")
+group.add_argument('--b', action='store_true', help="This is the 'b' variable")
+
+args = parser.parse_args()
+a = args.a
+b = args.b
+
+print(a)
+print(b)
+
 
 welcome = """
 
