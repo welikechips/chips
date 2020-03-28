@@ -12,5 +12,5 @@ else
     python /root/tools/Sublist3r/sublist3r.py -d $domain -o $path/output.txt
     cat $path/output.txt | tr '<BR>' '\n' | sed '/^$/d' | sort -u > $path/t.txt
     sleep 1
-    mv t.txt $path/output.txt
+    mv $path/t.txt $path/output.txt
 fi
