@@ -19,7 +19,7 @@ case "$response" in
             echo "Scanning" $p
             masscan $p -p0-65535 --max-rate 1000000 -oX scan$i.xml
             i=$[i+1]
-            sleep 60
+            sleep 10
         done < $filename
         ;;
     *)
@@ -27,7 +27,7 @@ case "$response" in
             echo "Scanning" $p
             masscan $p -p0-65535 -oX scan$i.xml
             i=$[i+1]
-            sleep 60
+            sleep 10
         done < $filename
          ;;
 esac
