@@ -1,12 +1,13 @@
 #!/bin/bash
 # Description: Install bashrc
 
-download_dir="/root/tools/bashrc-files/"
-root_bashrc="/root/.bashrc"
+cd
+download_dir="./tools/bashrc-files/"
+root_bashrc="./.bashrc"
 git clone https://github.com/welikechips/bashrc/ ${download_dir}
 
 prompt="Whos bashrc do you want to install?"
-options=( $(ls /root/tools/bashrc-files) )
+options=( $(ls ${download_dir}) )
 
 PS3="$prompt "
 select opt in "${options[@]}" "Quit" ; do 
