@@ -1,6 +1,11 @@
 #!/bin/bash
 
 sudo su
+cd ~
+git clone https://github.com/welikechips/chips ~/chips
+ln -s ~/chips/menu.py /usr/local/bin/chips
+echo "2" | sudo ~/chips/scripts/Installs/bashrc.sh
+~/chips/scripts/Installs/tmux.sh
 apt-get update -y && apt-get upgrade -y
 apt-get install apache2 -y
 a2enmod ssl rewrite proxy proxy_http
