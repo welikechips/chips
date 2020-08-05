@@ -2,5 +2,4 @@
 sudo su
 cd ~
 ~/chips/scripts/Installs/install-covenant.sh
-sudo tmux new-session -d -s covenant 
-#cd ~/Covenant/Covenant && dotnet run
+sudo tmux new-session -s covenant -d 'cd ~/Covenant/Covenant; dotnet run;'
