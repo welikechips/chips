@@ -1,7 +1,6 @@
 #!/bin/bash
 
 sudo su
-apt-get update -y && apt-get dist-upgrade -y && apt-get autoremove -y
 apt-get install apache2 -y
 a2enmod ssl rewrite proxy proxy_http
 a2ensite default-ssl.conf
