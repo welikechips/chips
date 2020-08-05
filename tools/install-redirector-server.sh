@@ -12,4 +12,4 @@ apt-get install software-properties-common
 add-apt-repository universe
 add-apt-repository ppa:certbot/certbot
 apt-get update -y
-apt-get install certbot python-certbot-apache
+apt-get install certbot python-certbot-apache -y
