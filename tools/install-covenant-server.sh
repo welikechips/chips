@@ -9,5 +9,5 @@ echo "export DOTNET_ROOT=$HOME/dotnet" >> ~/.bashrc
 echo "export PATH=$PATH:$HOME/dotnet" >> ~/.bashrc
 tmux new -s sess1 -d
 tmux rename-window -t sess1 "Covenant"
-tmux send-keys -t sess1 "cd ~/Covenant/Covenant; dotnet run;" C-m
+tmux send-keys -t sess1 "cd ~/Covenant/Covenant; dotnet run;" 
 tmux detach -t sess1
