@@ -7,5 +7,7 @@ wget https://download.visualstudio.microsoft.com/download/pr/c1a30ceb-adc2-4244-
 mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.302-linux-x64.tar.gz -C $HOME/dotnet
 echo "export DOTNET_ROOT=$HOME/dotnet" >> ~/.bashrc
 echo "export PATH=$PATH:$HOME/dotnet" >> ~/.bashrc
-tmux new-session -s covenant -d 
-tmux send-keys -t covenant 'cd ~/Covenant/Covenant; dotnet run;' C-m
+tmux new -s sess1 -d
+tmux rename-window -t sess1 "Covenant"
+tmux send-keys -t sess1 "cd ~/Covenant/Covenant; dotnet run;" C-m
+tmux detach -t sess1
