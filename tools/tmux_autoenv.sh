@@ -2,7 +2,7 @@
 echo "Make sure you source this file before using"
 read -r -p "What is the IP address? " ip_address
 
-server_name_found=$(grep -F "${ip_address} " /etc/hosts | awk '{ print $2 }')
+server_name_found=$(grep -F "${ip_address}" /etc/hosts | awk '{ print $2 }')
 
 tmux setenv IP ${ip_address}
 tmux setenv WD $(pwd)
