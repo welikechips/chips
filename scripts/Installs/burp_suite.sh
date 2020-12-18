@@ -9,5 +9,6 @@ gdown https://drive.google.com/uc?id=1t8VG0HGK30Bf6cdRSC6Yv7EVj_dmzEWr
 #wget www.weirdatfirst.com/files/burp.zip
 path=$(pwd)
 unzip -P "${password}" ${path}/burp.zip
-rm ${path}/burp.zip
+#removing until fix properly
+#rm ${path}/burp.zip
 java -jar ${path}/burp.jar
