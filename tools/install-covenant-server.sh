@@ -7,4 +7,8 @@ wget https://download.visualstudio.microsoft.com/download/pr/c1a30ceb-adc2-4244-
 mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.302-linux-x64.tar.gz -C $HOME/dotnet
 echo "export DOTNET_ROOT=$HOME/dotnet" >> ~/.bashrc
 echo "export PATH=$PATH:$HOME/dotnet" >> ~/.bashrc
-tmux new-session -s covenant -d 'cd ~/Covenant/Covenant; dotnet run;'
+tmux new-session -s covenant -d
+session=covenant
+window=${session}:1
+pane=${window}.1
+tmux send-keys -t "${pane}" C-z "cd ~/Covenant/Covenant; dotnet run;" Enter
