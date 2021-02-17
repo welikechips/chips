@@ -9,6 +9,6 @@ echo "export DOTNET_ROOT=$HOME/dotnet" >> ~/.bashrc
 echo "export PATH=$PATH:$HOME/dotnet" >> ~/.bashrc
 tmux new-session -s covenant -d
 session=covenant
-window=${session}:1
-pane=${window}.1
+window=${session}:0
+pane=${window}.0
 tmux send-keys -t "${pane}" C-z "cd ~/Covenant/Covenant; dotnet run;" Enter
