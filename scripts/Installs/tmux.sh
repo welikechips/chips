@@ -2,7 +2,7 @@
 # Description: Tmux
 cd 
 git clone https://github.com/welikechips/.tmux.git
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 #sudo gnome-terminal -- tmux new -s tmux-setup
