@@ -7,5 +7,5 @@ mkdir -p /usr/share/wordlists/
 cd /usr/share/wordlists/
 git clone https://github.com/danielmiessler/SecLists.git
 git clone https://github.com/fuzzdb-project/fuzzdb.git
-sudo echo 'set fish_greeting ""' >> /etc/fish/config.fish
+gem install evil-winrm
 echo 'export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --password-store=detect --no-sandbox --user-data-dir"' >> /etc/chromium.d/default-flags
