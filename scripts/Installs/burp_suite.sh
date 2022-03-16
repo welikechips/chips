@@ -12,3 +12,4 @@ unzip -P "${password}" ${path}/burp.zip
 #removing until fix properly
 #rm ${path}/burp.zip
 sh ${path}/burp/burpsuite_pro_linux_v2022_2_3.sh
+rm -r /opt/burp/ /opt/burp.zip
