@@ -11,4 +11,4 @@ path=$(pwd)
 unzip -P "${password}" ${path}/burp.zip
 #removing until fix properly
 #rm ${path}/burp.zip
-sh ${path}/burp.sh
+sh ${path}/burpsuite_pro_linux_v2022_2_3.sh
