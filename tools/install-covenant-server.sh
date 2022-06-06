@@ -13,7 +13,7 @@ tmux -2 new-session -d -s $SESSION
 # Setup a window for starting covenant server
 tmux split-window -h
 tmux select-pane -t 1
-tmux send-keys "cd ~/Covenant/Covenant && dotnet run" C-m
+tmux send-keys "export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1; cd ~/Covenant/Covenant && dotnet run" C-m
 tmux select-pane -t 2
 tmux send-keys "curl https://ip.42.pl/raw" C-m
 
