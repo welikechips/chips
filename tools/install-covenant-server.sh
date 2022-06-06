@@ -15,5 +15,5 @@ tmux split-window -h
 tmux select-pane -t 1
 tmux send-keys "cd ~/Covenant/Covenant && dotnet run" C-m
 tmux select-pane -t 2
-tmux send-keys "curl ip.42.pl/raw" C-m
+tmux send-keys "curl https://ip.42.pl/raw" C-m
 
