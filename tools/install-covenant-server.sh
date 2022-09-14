@@ -8,6 +8,7 @@ git clone --recurse-submodules https://github.com/cobbr/Covenant
 #echo "export DOTNET_ROOT=$HOME/dotnet" >> ~/.bashrc
 #echo "export PATH=$PATH:$HOME/dotnet" >> ~/.bashrc
 apt install -y docker.io
+cd Covenant/Covenant
 docker build -t covenant .
 
 SESSION=covenant
