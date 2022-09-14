@@ -17,7 +17,7 @@ tmux -2 new-session -d -s $SESSION
 tmux split-window -h
 tmux select-pane -t 1
 #tmux send-keys "export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1; cd ~/Covenant/Covenant && dotnet run" C-m
-tmux send-keys "docker run -it -p 7443:7443 -p 80:80 -p 443:443 --name covenant -v /root/Covenant/Covenant/Data>:/app/Data covenant" C-m
+tmux send-keys "docker run -it -p 7443:7443 -p 80:80 -p 443:443 --name covenant -v /root/Covenant/Covenant/Data:/app/Data covenant" C-m
 tmux select-pane -t 2
 tmux send-keys "curl https://ip.42.pl/raw" C-m
 
