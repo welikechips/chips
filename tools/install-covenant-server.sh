@@ -7,7 +7,7 @@ git clone --recurse-submodules https://github.com/cobbr/Covenant
 #mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.423-linux-x64.tar.gz -C $HOME/dotnet
 #echo "export DOTNET_ROOT=$HOME/dotnet" >> ~/.bashrc
 #echo "export PATH=$PATH:$HOME/dotnet" >> ~/.bashrc
-apt install docker.io
+apt install -y docker.io
 docker build -t covenant .
 
 SESSION=covenant
