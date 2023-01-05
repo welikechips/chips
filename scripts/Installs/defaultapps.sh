@@ -24,6 +24,7 @@ sudo apt-get -y install network-manager-vpnc
 sudo apt-get -y install network-manager-vpnc-gnome
 sudo apt-get -y install network-manager-l2tp
 sudo apt-get -y install network-manager-l2tp-gnome
+pip3 isntall updog
 pip3 install jsbeautifier
 mkdir -p /usr/share/wordlists/
 cd /usr/share/wordlists/
