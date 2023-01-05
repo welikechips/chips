@@ -1,7 +1,29 @@
 #!/bin/bash
 # Description: Default Applications and Setup
-sudo apt-get -y install gobuster steghide copyq ltrace strace gnome-screenshot network-manager-pptp network-manager-pptp-gnome network-manager-l2tp network-manager-l2tp-gnome exiftool
-sudo apt-get -y install dnsutils golang-go flameshot xclip python3-pip jd-gui chromium jxplorer network-manager-openconnect-gnome network-manager-openvpn network-manager-openvpn-gnome network-manager-pptp network-manager-pptp-gnome network-manager-vpnc network-manager-vpnc-gnome
+sudo apt-get -y install gobuster 
+sudo apt-get -y install steghide 
+sudo apt-get -y install copyq 
+sudo apt-get -y install ltrace
+sudo apt-get -y install strace 
+sudo apt-get -y install gnome-screenshot 
+sudo apt-get -y install exiftool
+sudo apt-get -y install dnsutils
+sudo apt-get -y install golang-go
+sudo apt-get -y install flameshot
+sudo apt-get -y install xclip
+sudo apt-get -y install python3-pip
+sudo apt-get -y install jd-gui
+sudo apt-get -y install chromium
+sudo apt-get -y install jxplorer
+sudo apt-get -y install network-manager-openconnect-gnome
+sudo apt-get -y install network-manager-openvpn
+sudo apt-get -y install network-manager-openvpn-gnome
+sudo apt-get -y install network-manager-pptp
+sudo apt-get -y install network-manager-pptp-gnome
+sudo apt-get -y install network-manager-vpnc
+sudo apt-get -y install network-manager-vpnc-gnome
+sudo apt-get -y install network-manager-l2tp
+sudo apt-get -y install network-manager-l2tp-gnome
 pip3 install jsbeautifier
 mkdir -p /usr/share/wordlists/
 cd /usr/share/wordlists/
