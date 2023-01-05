@@ -1,6 +1,6 @@
 #!/bin/bash
 # Description: Default Applications and Setup
-sudo apt-get -y install gobuster steghide copyq ltrace strace filezilla gnome-screenshot network-manager-pptp network-manager-pptp-gnome network-manager-l2tp network-manager-l2tp-gnome exiftool
+sudo apt-get -y install gobuster steghide copyq ltrace strace gnome-screenshot network-manager-pptp network-manager-pptp-gnome network-manager-l2tp network-manager-l2tp-gnome exiftool
 sudo apt-get -y install dnsutils golang-go flameshot xclip python3-pip jd-gui chromium jxplorer network-manager-openconnect-gnome network-manager-openvpn network-manager-openvpn-gnome network-manager-pptp network-manager-pptp-gnome network-manager-vpnc network-manager-vpnc-gnome
 pip3 install jsbeautifier
 mkdir -p /usr/share/wordlists/
