@@ -1,5 +1,6 @@
 #!/bin/bash
 # Description: Tmux
+sudo apt install tmux
 cd 
 git clone https://github.com/welikechips/.tmux.git
 git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
