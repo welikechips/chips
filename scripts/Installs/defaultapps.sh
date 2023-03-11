@@ -11,6 +11,7 @@ sudo apt-get -y install dnsutils
 sudo apt-get -y install golang-go
 sudo apt-get -y install flameshot
 sudo apt-get -y install xclip
+sudo apt-get -y install xfce4-terminal
 sudo apt-get -y install python3-pip
 sudo apt-get -y install jd-gui
 sudo apt-get -y install chromium
