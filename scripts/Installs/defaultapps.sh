@@ -1,5 +1,6 @@
 #!/bin/bash
 # Description: Default Applications and Setup
+sudo apt-get update
 sudo apt-get -y install gobuster 
 sudo apt-get -y install steghide 
 sudo apt-get -y install copyq 
