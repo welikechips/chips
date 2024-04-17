@@ -1,6 +1,7 @@
 #!/bin/bash
 # Description: Default Applications and Setup
 sudo apt-get update
+sudo apt-get -y install snap
 sudo apt-get -y install gobuster 
 sudo apt-get -y install steghide 
 sudo apt-get -y install copyq 
@@ -27,6 +28,7 @@ sudo apt-get -y install network-manager-vpnc-gnome
 sudo apt-get -y install network-manager-l2tp
 sudo apt-get -y install network-manager-l2tp-gnome
 sudo apt-get -y install golang-go
+sudo snap install ruby --classic
 pip3 install updog
 pip3 install jsbeautifier
 mkdir -p /usr/share/wordlists/
