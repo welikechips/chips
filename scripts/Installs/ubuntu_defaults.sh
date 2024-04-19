@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Default Applications and Setup
+# Description: Ubuntu
 sudo apt-get update
 sudo chsh -s /bin/bash
 sudo apt-get -y install snap
@@ -20,6 +20,8 @@ sudo apt-get -y install jd-gui
 sudo apt-get -y install chromium
 sudo apt-get -y install jxplorer
 sudo apt-get -y install golang-go
+sudo apt-get -y install nmap
+
 sudo snap install ruby --classic
 pip3 install updog
 pip3 install jsbeautifier
